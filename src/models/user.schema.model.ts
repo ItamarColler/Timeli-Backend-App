@@ -1,6 +1,6 @@
 import { Schema, model } from "mongoose";
 import { IUser } from "../interfaces/user.interface";
-import { TABLES } from "../consts";
+import { MONGO_TABLE } from "../consts";
 
 const userSchema = new Schema<IUser>(
   {
@@ -19,6 +19,6 @@ userSchema.methods.toJSON = function () {
   return obj;
 };
 
-const userModel = model(TABLES.USERS, userSchema);
+const userModel = model(MONGO_TABLE.USERS, userSchema);
 
 export default userModel;
