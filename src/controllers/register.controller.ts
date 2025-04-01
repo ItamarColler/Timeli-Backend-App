@@ -14,8 +14,8 @@ export const registerUserCtrl = async (
     lastname: req.body.lastname,
   } as IUser;
   try {
-    const userData = await registerUserService(registerParams);
-    res.send(JSON.stringify(userData)).status(200);
+    await registerUserService(registerParams);
+    res.sendStatus(201);
   } catch (error) {
     _next(error);
   }

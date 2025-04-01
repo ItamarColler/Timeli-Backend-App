@@ -4,4 +4,6 @@ export const MONGO_TABLE = {
 
 export const ERROR_TABLE = {
   EMAIL: "Email already exists",
+  BCRYPT: "Conversion promise error",
+  CREDENITALS: "Invalid email or password",
 };
