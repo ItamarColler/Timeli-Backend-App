@@ -1,4 +1,5 @@
 import { sign } from "jsonwebtoken";
+
 import { ACCESS_TOKEN_SECRET, REFRESH_TOKEN_SECRET } from "../utils/envs";
 
 export const signTokenUserService = (userId: string): string => {
